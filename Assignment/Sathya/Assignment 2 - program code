@@ -1,0 +1,20 @@
+#TEAM ID - PNT2022TMID37863
+#DONE BY - SATHYA NARAYANAN P
+
+from random import randint
+import time
+while True:
+    try:
+        time.sleep(2)
+        temp = randint(20, 50)
+        humid = randint(10, 100)
+        if temp >= 40:
+            print(f"{temp}, The temperature is high!!- ALARM")
+        else:
+            print(f"{temp}, The temperature is normal")
+        if humid >= 70:
+            print(f"{humid}, The humidity is high!!- ALARM")
+        else:
+            print(f"{humid}, The humidity is normal")
+    except KeyboardInterrupt:
+        break
